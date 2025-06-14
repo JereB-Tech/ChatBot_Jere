@@ -15,7 +15,7 @@ def configurar_pagina():
 #Mostrar el sidebar con los modelos
 def mostrar_sidebar():
     st.sidebar.title("Eleji tu modelo de IA favorito")
-    modelo = st.sidebar.selectbox("¿Cuál elegís?", Modelos, index=2) #Con el "index" elegimos lo que queremos mostrar primero.
+    modelo = st.sidebar.selectbox("¿Cuál elegís?", Modelos, index=0) #Con el "index" elegimos lo que queremos mostrar primero.
     st.write(f"**Elegiste el modelo:**  {modelo}")
     return modelo
 
