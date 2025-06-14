@@ -8,7 +8,7 @@ Modelos = ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768" ]
 
 #Configurar la página
 def configurar_pagina():
-    st.set_page_config(page_title="Mi ChatBot Personal", page_icon="👑") #Cambia el nombre de la ventana del navegador.
+    st.set_page_config(page_title="Mi ChatBot personal", page_icon="👑") #Cambia el nombre de la ventana del navegador.
     st.title("Hola, decime lo que quieras, estoy acá para ayudarte.")
 
 #Mostrar el sidebar con los modelos
@@ -77,4 +77,3 @@ def ejecutar_app():
 #El condicional que la define como app, tiene que estar SI O SI al final.
 if __name__ == "__main__": #solo se puede ejecutar el codigo en ESTE archivo y no se puede importar ninguna funcion en otro archivo
     ejecutar_app() #toma como referencia el archivo en el que estoy, sin importar el nombre, aun que SI O SI debe tener el __ antes y despues.
-
