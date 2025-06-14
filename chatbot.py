@@ -51,9 +51,9 @@ def mostrar_mensaje(role, content):
 #Llamar al modelo de Groq
 def obtener_respuesta_modelo(cliente, modelo, mensajes):
     respuesta = cliente.chat.completions.create(
-        model = modelo,
-        messages = mensajes,
-        stream = False
+    model = modelo,
+    messages = mensajes,
+    stream = False
     )
     return respuesta.choices[0].message.content
 
