@@ -71,7 +71,7 @@ def ejecutar_app():
         mostrar_mensaje("user", mensaje_usuario)
 
         mensaje_modelo = obtener_respuesta_modelo(cliente, modelo, st.session_state.mensajes)
-        agregar_mensaje_al_historial("assisant", mensaje_modelo)
+        agregar_mensaje_al_historial("assistant", mensaje_modelo)
         mostrar_mensaje("assistant", mensaje_modelo)
 
 
