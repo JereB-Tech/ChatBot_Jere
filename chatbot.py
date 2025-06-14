@@ -5,7 +5,7 @@ import groq
 
 # st.title("BIENVENIDOS A TALENTO TECH TEENS, COPADOS")
 #Tener modelos de IA
-Modelos = ["llama3-8b-8192", "llama3-70b-8192"]
+Modelos = ["llama3-8b-8192", "llama3-70b-8192",  "mixtral-8x7b-32768"]
 
 #Configurar la página
 def configurar_pagina():
@@ -56,10 +56,6 @@ def obtener_respuesta_modelo(cliente, modelo, mensajes):
     stream = False
     )
     return respuesta.choices[0].message.content
-
-
-
-
 
 #Flujo de la aplicación
 def ejecutar_app():
