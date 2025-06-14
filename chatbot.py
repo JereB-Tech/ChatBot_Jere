@@ -5,12 +5,12 @@ import groq
 
 # st.title("BIENVENIDOS A TALENTO TECH TEENS, COPADOS")
 #Tener modelos de IA
-Modelos = ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768"]
+Modelos = ["llama3-8b-8192", "llama3-70b-8192"]
 
 #Configurar la página
 def configurar_pagina():
-    st.set_page_config(page_title="Mi primera página con Python", page_icon="👑") #Cambia el nombre de la ventana del navegador.
-    st.title("Bienvenido a mi ChatBot")
+    st.set_page_config(page_title="ChatBotDeJere", page_icon="👑") #Cambia el nombre de la ventana del navegador.
+    st.title("Pregunta lo que necesites, estoy acá para ayudarte.")
 
 #Mostrar el sidebar con los modelos
 def mostrar_sidebar():
