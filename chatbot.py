@@ -9,7 +9,7 @@ Modelos = ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768" ]
 #Configurar la página
 def configurar_pagina():
     st.set_page_config(page_title="Mi ChatBot Personal", page_icon="👑") #Cambia el nombre de la ventana del navegador.
-    st.title("Bienvenido a mi ChatBot")
+    st.title("Hola, decime lo que quieras, estoy acá para ayudarte.")
 
 #Mostrar el sidebar con los modelos
 def mostrar_sidebar():
