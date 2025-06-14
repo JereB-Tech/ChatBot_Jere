@@ -4,7 +4,7 @@ import groq
 
 # st.title("BIENVENIDOS A TALENTO TECH TEENS, COPADOS")
 #Tener modelos de IA
-Modelos = ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768" ]
+Modelos = ["llama3-8b-8192", "llama3-70b-8192"]
 
 #Configurar la página
 def configurar_pagina():
@@ -14,7 +14,7 @@ def configurar_pagina():
 #Mostrar el sidebar con los modelos
 def mostrar_sidebar():
     st.sidebar.title("Eleji tu modelo de IA favorito")
-    modelo = st.sidebar.selectbox("¿Cuál elegís?", Modelos, index=1) #Con el "index" elegimos lo que queremos mostrar primero.
+    modelo = st.sidebar.selectbox("¿Cuál elegís?", Modelos, index=0) #Con el "index" elegimos lo que queremos mostrar primero.
     st.write(f"**Elegiste el modelo:**  {modelo}")
     return modelo
 
@@ -77,3 +77,5 @@ def ejecutar_app():
 #El condicional que la define como app, tiene que estar SI O SI al final.
 if __name__ == "__main__": #solo se puede ejecutar el codigo en ESTE archivo y no se puede importar ninguna funcion en otro archivo
     ejecutar_app() #toma como referencia el archivo en el que estoy, sin importar el nombre, aun que SI O SI debe tener el __ antes y despues.
+
+
